@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "Public Directory: \"What do you want to use as your public directory?\"",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
