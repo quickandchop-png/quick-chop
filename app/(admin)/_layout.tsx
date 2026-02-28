@@ -6,8 +6,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { Platform, StyleSheet, useColorScheme, View } from "react-native";
 import React, { useEffect } from "react";
 import Colors from "../../constants/colors";
-import { useAuth } from "@/contexts/AuthContext";
-import WebSidebar, { useIsDesktopWeb } from "@/components/WebSidebar";
+import { useAuth } from "../../contexts/AuthContext";
+import WebSidebar, { useIsDesktopWeb } from "../../components/WebSidebar";
 
 const ADMIN_NAV_ITEMS = [
   { name: "index", label: "Dashboard", icon: "stats-chart-outline", activeIcon: "stats-chart" },
