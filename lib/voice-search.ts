@@ -86,50 +86,21 @@ const UNIT_PATTERNS: Record<string, { regex: RegExp; unit: ParsedVoiceOrder['uni
     { regex: /(\d+(?:\.\d+)?)\s*kg/i, unit: 'kg', toBaseQty: (n) => n },
     { regex: /(\d+(?:\.\d+)?)\s*(?:grams?|gm|g)\b/i, unit: 'g', toBaseQty: (n) => n },
     { regex: /(\d+(?:\.\d+)?)\s*(?:pieces?|pcs?|nos?)\b/i, unit: 'piece', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:boxes?|box)\b/i, unit: 'box', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:books?)\b/i, unit: 'book', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:sets?)\b/i, unit: 'set', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:packets?|packs?)\b/i, unit: 'packet', toBaseQty: (n) => n },
-  ],
-  hi: [
-    { regex: /(\d+(?:\.\d+)?)\s*(?:किलो|kg)/i, unit: 'kg', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:ग्राम|gm|g)\b/i, unit: 'g', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:पीस|टुकड़ा|नग)/i, unit: 'piece', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:बॉक्स|डिब्बा)/i, unit: 'box', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:किताब|कॉपी)/i, unit: 'book', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:पैकेट)/i, unit: 'packet', toBaseQty: (n) => n },
   ],
   ml: [
+    // അരക്കിലോ (500g)
+    { regex: /(?:അരക്കിലോ|അര കിലോ|500\s*ഗ്രാം)/i, unit: 'g', toBaseQty: () => 500 },
+    // കാൽക്കിലോ (250g)
+    { regex: /(?:കാൽക്കിലോ|കാൽ കിലോ|250\s*ഗ്രാം)/i, unit: 'g', toBaseQty: () => 250 },
+    // മുക്കാൽക്കിലോ (750g)
+    { regex: /(?:മുക്കാൽക്കിലോ|മുക്കാൽ കിലോ|750\s*ഗ്രാം)/i, unit: 'g', toBaseQty: () => 750 },
+    // സാധാരണ യൂണിറ്റുകൾ
     { regex: /(\d+(?:\.\d+)?)\s*(?:കിലോ|kg)/i, unit: 'kg', toBaseQty: (n) => n },
     { regex: /(\d+(?:\.\d+)?)\s*(?:ഗ്രാം|gm|g)\b/i, unit: 'g', toBaseQty: (n) => n },
     { regex: /(\d+(?:\.\d+)?)\s*(?:എണ്ണം|പീസ്)/i, unit: 'piece', toBaseQty: (n) => n },
     { regex: /(\d+(?:\.\d+)?)\s*(?:ബോക്സ്|പെട്ടി)/i, unit: 'box', toBaseQty: (n) => n },
     { regex: /(\d+(?:\.\d+)?)\s*(?:പുസ്തകം|ബുക്ക്)/i, unit: 'book', toBaseQty: (n) => n },
     { regex: /(\d+(?:\.\d+)?)\s*(?:പാക്കറ്റ്)/i, unit: 'packet', toBaseQty: (n) => n },
-  ],
-  ta: [
-    { regex: /(\d+(?:\.\d+)?)\s*(?:கிலோ|kg)/i, unit: 'kg', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:கிராம்|gm|g)\b/i, unit: 'g', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:பீஸ்|துண்டு)/i, unit: 'piece', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:பாக்ஸ்|பெட்டி)/i, unit: 'box', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:புத்தகம்)/i, unit: 'book', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:பாக்கெட்)/i, unit: 'packet', toBaseQty: (n) => n },
-  ],
-  te: [
-    { regex: /(\d+(?:\.\d+)?)\s*(?:కిలో|kg)/i, unit: 'kg', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:గ్రాములు|gm|g)\b/i, unit: 'g', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:పీస్|ముక్కలు)/i, unit: 'piece', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:బాక్స్|పెట్టె)/i, unit: 'box', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:పుస్తకం)/i, unit: 'book', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:ప్యాకెట్)/i, unit: 'packet', toBaseQty: (n) => n },
-  ],
-  kn: [
-    { regex: /(\d+(?:\.\d+)?)\s*(?:ಕಿಲೋ|kg)/i, unit: 'kg', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:ಗ್ರಾಂ|gm|g)\b/i, unit: 'g', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:ಪೀಸ್|ತುಂಡು)/i, unit: 'piece', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:ಬಾಕ್ಸ್|ಪೆಟ್ಟಿಗೆ)/i, unit: 'box', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:ಪುಸ್ತಕ)/i, unit: 'book', toBaseQty: (n) => n },
-    { regex: /(\d+(?:\.\d+)?)\s*(?:ಪ್ಯಾಕೆಟ್)/i, unit: 'packet', toBaseQty: (n) => n },
   ],
 };
 
@@ -146,7 +117,10 @@ export function parseVoiceOrder(text: string, language: Language): ParsedVoiceOr
   for (const p of patterns) {
     const match = text.match(p.regex);
     if (match) {
-      quantity = p.toBaseQty(parseFloat(match[1]));
+      quantity = p.toBaseQty(1); // Default to 1 for non-numeric patterns like 'അരക്കിലോ'
+      const numMatch = match[0].match(/(\d+(?:\.\d+)?)/);
+      if (numMatch) quantity = p.toBaseQty(parseFloat(numMatch[1]));
+      
       unit = p.unit;
       foundUnit = true;
       cleanText = text.replace(match[0], '').trim();
@@ -163,8 +137,8 @@ export function parseVoiceOrder(text: string, language: Language): ParsedVoiceOr
   }
 
   const productName = cleanText
-    .replace(/^\s*(of|the|and|ka|ke|ki|के|का|की)\s+/i, '')
-    .replace(/\s+(of|the|and|ka|ke|ki|के|का|की)\s*$/i, '')
+    .replace(/^\s*(of|the|and|ka|ke|ki|എനിക്ക്|വേണം)\s+/i, '')
+    .replace(/\s+(of|the|and|ka|ke|ki|വേണം)\s*$/i, '')
     .trim();
 
   if (!productName) return null;
