@@ -10,7 +10,7 @@ import { useIsDesktopWeb } from '../../components/WebSidebar';
 import { useAuth } from '../../contexts/AuthContext';
 import { getProducts, getOrders, Product, Order } from '../../lib/storage';
 
-function StatCard({ icon, label, value, color, isDesktop }: { icon: string; label: string; value: string; color: string; isDesktop?: boolean }) {
+function StatCard({ icon, label, value, color, isDesktop }: { icon: string; label: string; value: string; color: string; isDesktop?:boolean }) {
   return (
     <View style={[styles.statCard, isDesktop && { width: '30%', minWidth: 160 }]}>
       <View style={[styles.statIcon, { backgroundColor: color + '18' }]}>
