@@ -13,7 +13,7 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import {
   getCategories, addCategory, updateCategory, deleteCategory,
   CategoryItem, getProducts,
-} from '@/lib/storage';
+} from '../../lib/storage';
 
 const ICON_OPTIONS = [
   'leaf', 'basket', 'pencil', 'cart', 'fast-food', 'pizza', 'fish', 'beer',
