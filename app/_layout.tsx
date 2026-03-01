@@ -5,13 +5,13 @@ import React, { useEffect } from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { KeyboardProvider } from "react-native-keyboard-controller";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { ErrorBoundary } from "../../components/ErrorBoundary";
-import { queryClient } from "../../lib/query-client";
-import { AuthProvider } from "../../contexts/AuthContext";
-import { LanguageProvider } from "../../contexts/LanguageContext";
+import { ErrorBoundary } from "../components/ErrorBoundary";
+import { queryClient } from "../lib/query-client";
+import { AuthProvider } from "../contexts/AuthContext";
+import { LanguageProvider } from "../contexts/LanguageContext";
 import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_600SemiBold, Poppins_700Bold } from "@expo-google-fonts/poppins";
 import { StatusBar } from "expo-status-bar";
-import AppSplash from "../../components/AppSplash";
+import AppSplash from "../components/AppSplash";
 
 SplashScreen.preventAutoHideAsync();
 
