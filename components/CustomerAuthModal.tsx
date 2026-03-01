@@ -8,8 +8,8 @@ import { Ionicons } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as Haptics from 'expo-haptics';
-import Colors from '@/constants/colors';
-import { useAuth } from '@/contexts/AuthContext';
+import Colors from '../constants/colors';
+import { useAuth } from '../contexts/AuthContext';
 import { hasUserPin, findCustomerByPhone } from '../lib/storage';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
