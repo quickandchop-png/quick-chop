@@ -7,12 +7,12 @@ import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect, router } from 'expo-router';
 import * as Haptics from 'expo-haptics';
-import Colors from '@/constants/colors';
-import { useAuth } from '@/contexts/AuthContext';
+import Colors from '../../constants/colors';
+import { useAuth } from '../../contexts/AuthContext';
 import { updatePaymentStatus, Order } from '@/lib/storage';
-import { markAllRead } from '@/lib/notifications';
-import { useRealtimeOrders, useRealtimeNotifications } from '@/lib/realtime';
-import { playNotificationBeep } from '@/lib/alert-sound';
+import { markAllRead } from '../../lib/notifications';
+import { useRealtimeOrders, useRealtimeNotifications } from '../../lib/realtime';
+import { playNotificationBeep } from '../../lib/alert-sound';
 
 const STATUS_CONFIG: Record<string, { color: string; bg: string; icon: keyof typeof Ionicons.glyphMap; label: string }> = {
   pending: { color: '#F57F17', bg: '#FFF8E1', icon: 'time-outline', label: 'Pending' },
