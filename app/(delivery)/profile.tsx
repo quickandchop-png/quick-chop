@@ -4,8 +4,8 @@ import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import * as Haptics from 'expo-haptics';
-import Colors from '@/constants/colors';
-import { useAuth } from '@/contexts/AuthContext';
+import Colors from '../..constants/colors';
+import { useAuth } from '../../contexts/AuthContext';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default function DeliveryProfileScreen() {
