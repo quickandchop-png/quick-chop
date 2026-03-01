@@ -5,10 +5,10 @@ import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
-import Colors from '@/constants/colors';
-import { useIsDesktopWeb } from '@/components/WebSidebar';
-import { useAuth } from '@/contexts/AuthContext';
-import { getProducts, getOrders, Product, Order } from '@/lib/storage';
+import Colors from '../../constants/colors';
+import { useIsDesktopWeb } from '../../components/WebSidebar';
+import { useAuth } from '../../contexts/AuthContext';
+import { getProducts, getOrders, Product, Order } from '../../lib/storage';
 
 function StatCard({ icon, label, value, color, isDesktop }: { icon: string; label: string; value: string; color: string; isDesktop?: boolean }) {
   return (
