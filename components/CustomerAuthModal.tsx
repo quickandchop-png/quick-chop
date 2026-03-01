@@ -10,7 +10,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import * as Haptics from 'expo-haptics';
 import Colors from '@/constants/colors';
 import { useAuth } from '@/contexts/AuthContext';
-import { hasUserPin, findCustomerByPhone } from '@/lib/storage';
+import { hasUserPin, findCustomerByPhone } from '../lib/storage';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 
