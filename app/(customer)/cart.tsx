@@ -11,14 +11,14 @@ import * as Haptics from 'expo-haptics';
 import * as Clipboard from 'expo-clipboard';
 import { LinearGradient } from 'expo-linear-gradient';
 import QRCode from 'react-native-qrcode-svg';
-import Colors from '@/constants/colors';
-import { useAuth } from '@/contexts/AuthContext';
+import Colors from '../../constants/colors';
+import { useAuth } from '../../contexts/AuthContext';
 import { getCart, updateCartItem, clearCart, createOrder, updatePaymentStatus, CartItem, getUPIActiveMerchantId, getCustomerPrice, CUSTOMER_CARE_CHARGE, getShopUPIId, getWalletBalance, addWalletReward, redeemWallet } from '@/lib/storage';
-import CustomerAuthModal from '@/components/CustomerAuthModal';
-import { getPickedLocation, clearPickedLocation, getSavedAddresses, addSavedAddress, removeSavedAddress, SavedAddress } from '@/lib/location-store';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { translateProductName } from '@/lib/i18n';
-import { createNotification } from '@/lib/notifications';
+import CustomerAuthModal from '../../components/CustomerAuthModal';
+import { getPickedLocation, clearPickedLocation, getSavedAddresses, addSavedAddress, removeSavedAddress, SavedAddress } from '../../lib/location-store';
+import { useLanguage } from '../../contexts/LanguageContext';
+import { translateProductName } from '../../lib/i18n';
+import { createNotification } from '../../lib/notifications';
 
 const BACKEND_URL = process.env.EXPO_PUBLIC_DOMAIN
   ? `https://${process.env.EXPO_PUBLIC_DOMAIN}`
