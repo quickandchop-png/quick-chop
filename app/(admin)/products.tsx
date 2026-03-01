@@ -15,9 +15,9 @@ import {
   getProducts, getShops, addProduct, updateProduct, deleteProduct,
   Product, Shop, ProductCategory, getCategories, CategoryItem,
 } from '../../lib/storage';
-import { MASTER_PRODUCTS, MasterProduct } from '@/lib/product-master';
+import { MASTER_PRODUCTS, MasterProduct } from '../../lib/product-master';
 import { useLanguage } from '../../contexts/LanguageContext';
-import { translateProductName } from '@/lib/i18n';
+import { translateProductName } from '../../lib/i18n';
 
 type EditMode = null | 'add' | 'edit' | 'quick' | 'bulkPricing';
 
