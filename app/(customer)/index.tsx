@@ -199,7 +199,7 @@ export default function CustomerHomeScreen() {
             <Text style={styles.headerSub}>What would you like today?</Text>
           </View>
           <View style={styles.logoSmall}>
-            <Image source={require('@/assets/images/splash-icon.png')} style={{ width: 34, height: 34 }} contentFit="contain" />
+            <Image source={require('../../assets/images/splash-icon.png')} style={{ width: 34, height: 34 }} contentFit="contain" />
           </View>
         </View>
       </LinearGradient>
