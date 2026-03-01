@@ -4,14 +4,14 @@ import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { router, useFocusEffect } from 'expo-router';
 import * as Haptics from 'expo-haptics';
-import Colors from '@/constants/colors';
-import { useAuth } from '@/contexts/AuthContext';
-import { useLanguage } from '@/contexts/LanguageContext';
+import Colors from '../../constants/colors';
+import { useAuth } from '../../contexts/AuthContext';
+import { useLanguage } from '../../contexts/LanguageContext';
 import { LinearGradient } from 'expo-linear-gradient';
-import CustomerAuthModal from '@/components/CustomerAuthModal';
-import { LANGUAGES, Language } from '@/lib/i18n';
-import { getSavedAddresses, removeSavedAddress, SavedAddress, getPickedLocation, clearPickedLocation, addSavedAddress } from '@/lib/location-store';
-import { getWalletBalance } from '@/lib/storage';
+import CustomerAuthModal from '../../components/CustomerAuthModal';
+import { LANGUAGES, Language } from '../../lib/i18n';
+import { getSavedAddresses, removeSavedAddress, SavedAddress, getPickedLocation, clearPickedLocation, addSavedAddress } from '../../lib/location-store';
+import { getWalletBalance } from '../../lib/storage';
 
 type ModalStep = 'register' | 'pin_setup' | 'pin_verify';
 
