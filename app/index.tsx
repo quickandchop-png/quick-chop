@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { View, ActivityIndicator, StyleSheet } from 'react-native';
 import { router } from 'expo-router';
-import Colors from '@/constants/colors';
-import { useAuth } from '@/contexts/AuthContext';
+import Colors from '../../constants/colors';
+import { useAuth } from '../../contexts/AuthContext';
 
 export default function IndexScreen() {
   const { user, isLoading } = useAuth();
