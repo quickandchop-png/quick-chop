@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Pressable, StyleSheet, Platform, useWindowDimensions } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import Colors from '../../constants/colors';
+import Colors from '../constants/colors';
 
 const SIDEBAR_WIDTH = 220;
 const DESKTOP_BREAKPOINT = 768;
