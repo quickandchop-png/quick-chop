@@ -9,10 +9,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from 'expo-router';
 import * as Haptics from 'expo-haptics';
 import * as Location from 'expo-location';
-import Colors from '@/constants/colors';
-import { useIsDesktopWeb } from '@/components/WebSidebar';
-import { getShops, updateShop, getProducts, addProduct, Shop } from '@/lib/storage';
-import { MASTER_PRODUCTS, MasterProduct } from '@/lib/product-master';
+import Colors from '../../constants/colors';
+import { useIsDesktopWeb } from '../../components/WebSidebar';
+import { getShops, updateShop, getProducts, addProduct, Shop } from '../../lib/storage';
+import { MASTER_PRODUCTS, MasterProduct } from '../../lib/product-master';
 
 type SeedCategory = 'all' | 'vegetables' | 'groceries' | 'stationery';
 
