@@ -10,14 +10,14 @@ import { useFocusEffect } from 'expo-router';
 import * as Haptics from 'expo-haptics';
 import * as ImagePicker from 'expo-image-picker';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useIsDesktopWeb } from '@/components/WebSidebar';
-import Colors from '@/constants/colors';
-import { useAuth } from '@/contexts/AuthContext';
+import { useIsDesktopWeb } from '../../components/WebSidebar';
+import Colors from '../../constants/colors';
+import { useAuth } from '../../contexts/AuthContext';
 import {
   getHomeContent, updateHomeContent, HomeContent,
   getUPIConfig, updateUPIMerchantId, verifyUPIMasterPin,
   changeUPIMasterPin, initUPIMasterPin, UPIConfig, UPIAuditEntry,
-} from '@/lib/storage';
+} from '../../lib/storage';
 
 function MasterPinModal({
   visible,
