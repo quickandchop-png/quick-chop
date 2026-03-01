@@ -7,9 +7,9 @@ import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from 'expo-router';
 import * as Haptics from 'expo-haptics';
-import Colors from '@/constants/colors';
-import { useIsDesktopWeb } from '@/components/WebSidebar';
-import { useLanguage } from '@/contexts/LanguageContext';
+import Colors from "../../constants/colors";
+import { useIsDesktopWeb } from '../../components/WebSidebar';
+import { useLanguage } from '../../contexts/LanguageContext';
 import {
   getCategories, addCategory, updateCategory, deleteCategory,
   CategoryItem, getProducts,
