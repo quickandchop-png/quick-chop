@@ -9,14 +9,14 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from 'expo-router';
 import * as Haptics from 'expo-haptics';
 import * as ImagePicker from 'expo-image-picker';
-import Colors from '@/constants/colors';
-import { useIsDesktopWeb } from '@/components/WebSidebar';
+import Colors from '../../constants/colors';
+import { useIsDesktopWeb } from '../../components/WebSidebar';
 import {
   getProducts, getShops, addProduct, updateProduct, deleteProduct,
   Product, Shop, ProductCategory, getCategories, CategoryItem,
-} from '@/lib/storage';
+} from '../../lib/storage';
 import { MASTER_PRODUCTS, MasterProduct } from '@/lib/product-master';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useLanguage } from '../../contexts/LanguageContext';
 import { translateProductName } from '@/lib/i18n';
 
 type EditMode = null | 'add' | 'edit' | 'quick' | 'bulkPricing';
