@@ -13,7 +13,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import QRCode from 'react-native-qrcode-svg';
 import Colors from '../../constants/colors';
 import { useAuth } from '../../contexts/AuthContext';
-import { getCart, updateCartItem, clearCart, createOrder, updatePaymentStatus, CartItem, getUPIActiveMerchantId, getCustomerPrice, CUSTOMER_CARE_CHARGE, getShopUPIId, getWalletBalance, addWalletReward, redeemWallet } from '@/lib/storage';
+import { getCart, updateCartItem, clearCart, createOrder, updatePaymentStatus, CartItem, getUPIActiveMerchantId, getCustomerPrice, CUSTOMER_CARE_CHARGE, getShopUPIId, getWalletBalance, addWalletReward, redeemWallet } from '../../lib/storage';
 import CustomerAuthModal from '../../components/CustomerAuthModal';
 import { getPickedLocation, clearPickedLocation, getSavedAddresses, addSavedAddress, removeSavedAddress, SavedAddress } from '../../lib/location-store';
 import { useLanguage } from '../../contexts/LanguageContext';
