@@ -8,8 +8,8 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
-import Colors from '../../constants/colors';
-import { useAuth } from '../../contexts/AuthContext';
+import Colors from '../constants/colors';
+import { useAuth } from '../contexts/AuthContext';
 
 export default function AdminLoginScreen() {
   const insets = useSafeAreaInsets();
