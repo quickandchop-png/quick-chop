@@ -10,14 +10,14 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useLocalSearchParams, router, useFocusEffect } from 'expo-router';
 import * as Location from 'expo-location';
 import * as Haptics from 'expo-haptics';
-import Colors from '@/constants/colors';
-import { getProducts, getShops, Product, Shop, addToCart, getCustomerPrice, getCategories, CategoryItem } from '@/lib/storage';
-import { useAuth } from '@/contexts/AuthContext';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { translateProductName } from '@/lib/i18n';
-import CustomerAuthModal from '@/components/CustomerAuthModal';
-import { getPickedLocation } from '@/lib/location-store';
-import { isVoiceSupported, startVoiceRecognition, stopVoiceRecognition } from '@/lib/voice-search';
+import Colors from '../../constants/colors';
+import { getProducts, getShops, Product, Shop, addToCart, getCustomerPrice, getCategories, CategoryItem } from '../../lib/storage';
+import { useAuth } from '../../contexts/AuthContext';
+import { useLanguage } from '../../contexts/LanguageContext';
+import { translateProductName } from '../../lib/i18n';
+import CustomerAuthModal from '../../components/CustomerAuthModal';
+import { getPickedLocation } from '../../lib/location-store';
+import { isVoiceSupported, startVoiceRecognition, stopVoiceRecognition } from '../../lib/voice-search';
 
 function haversineDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
   const R = 6371;
