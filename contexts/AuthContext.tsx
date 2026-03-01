@@ -6,7 +6,7 @@ import {
   registerCustomer as registerCustomerFn,
   findCustomerByPhone,
   setUserPin, verifyUserPin, hasUserPin,
-} from '@/lib/storage';
+} from '../../lib/storage';
 
 interface AuthContextValue {
   user: AppUser | null;
