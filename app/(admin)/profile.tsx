@@ -9,7 +9,7 @@ import { useAuth } from '../../contexts/AuthContext';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { LinearGradient } from 'expo-linear-gradient';
 import { LANGUAGES, Language } from '../../lib/i18n';
-import { useIsDesktopWeb } from '@/components/WebSidebar';
+import { useIsDesktopWeb } from '../../components/WebSidebar';
 
 export default function AdminProfileScreen() {
   const insets = useSafeAreaInsets();
