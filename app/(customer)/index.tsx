@@ -9,12 +9,12 @@ import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { router, useFocusEffect } from 'expo-router';
 import * as Haptics from 'expo-haptics';
-import Colors from '@/constants/colors';
-import { useAuth } from '@/contexts/AuthContext';
-import { getHomeContent, getProducts, HomeContent, Product, addToCart, getCustomerPrice } from '@/lib/storage';
-import CustomerAuthModal from '@/components/CustomerAuthModal';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { translateProductName } from '@/lib/i18n';
+import Colors from '../../constants/colors';
+import { useAuth } from '../../contexts/AuthContext';
+import { getHomeContent, getProducts, HomeContent, Product, addToCart, getCustomerPrice } from '../../lib/storage';
+import CustomerAuthModal from '../../components/CustomerAuthModal';
+import { useLanguage } from '../../contexts/LanguageContext';
+import { translateProductName } from '../../lib/i18n';
 import { useVideoPlayer, VideoView } from 'expo-video';
 
 const { width } = Dimensions.get('window');
