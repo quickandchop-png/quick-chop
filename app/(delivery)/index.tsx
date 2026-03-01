@@ -10,13 +10,13 @@ import { useFocusEffect } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as Haptics from 'expo-haptics';
 import * as Location from 'expo-location';
-import Colors from '@/constants/colors';
-import { useAuth } from '@/contexts/AuthContext';
-import { getOrders, updateOrderStatus, Order } from '@/lib/storage';
-import { updateDeliveryLocation, clearDeliveryLocation } from '@/lib/tracking';
-import { markAllRead } from '@/lib/notifications';
-import { useRealtimeOrders, useRealtimeNotifications } from '@/lib/realtime';
-import { playNotificationBeep } from '@/lib/alert-sound';
+import Colors from '../../constants/colors';
+import { useAuth } from '../../contexts/AuthContext';
+import { getOrders, updateOrderStatus, Order } from '../../lib/storage';
+import { updateDeliveryLocation, clearDeliveryLocation } from '../../lib/tracking';
+import { markAllRead } from '../../lib/notifications';
+import { useRealtimeOrders, useRealtimeNotifications } from '../../lib/realtime';
+import { playNotificationBeep } from '../../lib/alert-sound';
 
 const STATUS_COLORS: Record<string, string> = {
   out_for_delivery: '#E65100', delivered: '#2E7D32', pending: '#F57F17',
