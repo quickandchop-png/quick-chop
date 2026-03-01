@@ -10,9 +10,9 @@ import { useFocusEffect } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as Haptics from 'expo-haptics';
 import * as Location from 'expo-location';
-import { useIsDesktopWeb } from '@/components/WebSidebar';
-import Colors from '@/constants/colors';
-import { getAllUsers, deleteUser, toggleUserActive, createStaff, AppUser, StaffLocationData } from '@/lib/storage';
+import { useIsDesktopWeb } from '../../components/WebSidebar';
+import Colors from '../../constants/colors';
+import { getAllUsers, deleteUser, toggleUserActive, createStaff, AppUser, StaffLocationData } from '../../lib/storage';
 
 const ROLE_CONFIG: Record<string, { color: string; icon: keyof typeof Ionicons.glyphMap; label: string }> = {
   customer: { color: '#1565C0', icon: 'person', label: 'Customer' },
