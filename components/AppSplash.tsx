@@ -32,7 +32,7 @@ export default function AppSplash() {
     <View style={[styles.container, { paddingTop: insets.top + webTopPad, paddingBottom: insets.bottom }]}>
       <Animated.View style={[styles.imageWrapper, { opacity: fadeAnim, transform: [{ scale: imageScale }] }]}>
         <Image
-          source={require('@/assets/images/splash-icon.png')}
+          source={require('../assets/images/splash-icon.png')}
           style={styles.image}
           resizeMode="contain"
         />
