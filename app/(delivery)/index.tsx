@@ -160,7 +160,7 @@ export default function DeliveryTasksScreen() {
               </View>
             )}
             <View style={styles.logoSmall}>
-              <Image source={require('@/assets/images/splash-icon.png')} style={{ width: 34, height: 34 }} contentFit="contain" />
+              <Image source={require('../../assets/images/splash-icon.png')} style={{ width: 34, height: 34 }} contentFit="contain" />
             </View>
           </View>
         </View>
