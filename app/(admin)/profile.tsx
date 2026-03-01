@@ -4,11 +4,11 @@ import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import * as Haptics from 'expo-haptics';
-import Colors from '@/constants/colors';
-import { useAuth } from '@/contexts/AuthContext';
-import { useLanguage } from '@/contexts/LanguageContext';
+import Colors from '../../constants/colors';
+import { useAuth } from '../../contexts/AuthContext';
+import { useLanguage } from '../../contexts/LanguageContext';
 import { LinearGradient } from 'expo-linear-gradient';
-import { LANGUAGES, Language } from '@/lib/i18n';
+import { LANGUAGES, Language } from '../../lib/i18n';
 import { useIsDesktopWeb } from '@/components/WebSidebar';
 
 export default function AdminProfileScreen() {
