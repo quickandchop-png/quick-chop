@@ -5,9 +5,9 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
-import Colors from '@/constants/colors';
-import { Order } from '@/lib/storage';
-import { playNewOrderAlert } from '@/lib/alert-sound';
+import Colors from '../constants/colors';
+import { Order } from '../lib/storage';
+import { playNewOrderAlert } from '../lib/alert-sound';
 
 interface NewOrderAlertProps {
   order: Order | null;
