@@ -9,13 +9,13 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from 'expo-router';
 import * as Haptics from 'expo-haptics';
 import * as ImagePicker from 'expo-image-picker';
-import Colors from '@/constants/colors';
-import { useIsDesktopWeb } from '@/components/WebSidebar';
-import { useAuth } from '@/contexts/AuthContext';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { getProducts, addProduct, updateProduct, deleteProduct, getShops, Product, Shop, ProductCategory, getCategories, CategoryItem } from '@/lib/storage';
-import { MASTER_PRODUCTS, MasterProduct } from '@/lib/product-master';
-import { translateProductName } from '@/lib/i18n';
+import Colors from '../../constants/colors';
+import { useIsDesktopWeb } from '../../components/WebSidebar';
+import { useAuth } from '../../contexts/AuthContext';
+import { useLanguage } from '../../contexts/LanguageContext';
+import { getProducts, addProduct, updateProduct, deleteProduct, getShops, Product, Shop, ProductCategory, getCategories, CategoryItem } from '../../lib/storage';
+import { MASTER_PRODUCTS, MasterProduct } from '../../lib/product-master';
+import { translateProductName } from '../../lib/i18n';
 
 type AddMode = null | 'quick' | 'custom' | 'bulkPricing' | 'editExisting';
 
