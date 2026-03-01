@@ -9,9 +9,9 @@ import { router } from 'expo-router';
 import * as Location from 'expo-location';
 import * as Haptics from 'expo-haptics';
 import { LinearGradient } from 'expo-linear-gradient';
-import Colors from '../../constants/colors';
-import { savePickedLocation } from '../../lib/location-store';
-import { isFirebaseEnabled } from '../../lib/storage';
+import Colors from '../constants/colors';
+import { savePickedLocation } from '../lib/location-store';
+import { isFirebaseEnabled } from '../lib/storage';
 
 const NOMINATIM_URL = 'https://nominatim.openstreetmap.org';
 
