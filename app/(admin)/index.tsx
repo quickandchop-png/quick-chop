@@ -8,7 +8,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import Colors from '../../constants/colors';
 import { useAuth } from '../../contexts/AuthContext';
 import { useIsDesktopWeb } from '../../components/WebSidebar';
-import { getAllUsers, getProducts, getOrders, getShops, getCommissionStats, markShopCommissionCollected, updateOrderStatus, AppUser, Product, Order, Shop, ShopCommissionStat, getRewardPercent, setRewardPercent, getAllWalletBalances } from '@/lib/storage';
+import { getAllUsers, getProducts, getOrders, getShops, getCommissionStats, markShopCommissionCollected, updateOrderStatus, AppUser, Product, Order, Shop, ShopCommissionStat, getRewardPercent, setRewardPercent, getAllWalletBalances } from '../../lib/storage';
 import { createNotification } from '../../lib/notifications';
 import * as Haptics from 'expo-haptics';
 
