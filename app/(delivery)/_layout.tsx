@@ -5,8 +5,8 @@ import { BlurView } from "expo-blur";
 import { Ionicons } from "@expo/vector-icons";
 import { Platform, StyleSheet, useColorScheme, View } from "react-native";
 import React, { useEffect } from "react";
-import Colors from "@/constants/colors";
-import { useAuth } from "@/contexts/AuthContext";
+import Colors from "../../constants/colors";
+import { useAuth } from "../../contexts/AuthContext";
 
 function NativeTabLayout() {
   return (
